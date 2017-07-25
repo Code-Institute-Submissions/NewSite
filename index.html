@@ -3,112 +3,135 @@
 <head>
 	<meta charset="utf-8">
 	<title>The Candyland Cart Company Ltd.</title>
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
-	<style type="text/css">
-		
-			#container
-			{
-				margin-right:auto; 
-				margin-left:auto;
-				position: relative;		/*Must be relative for positioning the header*/
-				width:960px;	
-				border-radius: 10px;
-				padding: 10px;
-				padding-top: 200px;
-				font-size: 0; /* for inline-block spacing issues*/
-				display: flex;          /* makes container a flexbox*/
-				flex-flow: row wrap;    /* layout the boxes in rows and wrap them*/
-				justify-content: space-around; /* margins will be divided equally*/
-				max-width:1050px;              /* (optional)change from 960px to 1050*/
-			}
-			.box{
-				position: relative;		/*Must be relative for absolute image link*/
-				width: 100%;
-				background-color: #81BBC9;
-				margin-bottom: 10px;
-				font-family: Lobster;
-				font-size: 20px;
-				text-align: center;
-				padding: 30px 0;
-			}
-								/*changed sidebar and content to classes*/
-			.sidebar{
-				/*add vendor prefixes for border-box*/
-				-webkit-box-sizing: border-box;
-       			-moz-box-sizing: border-box;
-            	box-sizing: border-box;
-				display: inline-block;
-				width:470px;
-				margin-right: 10px;
-				padding-left: 10px;
-				padding-right: 10px;
-			}
-			.content{
-				/*add vendor prefixes for border-box*/
-				-webkit-box-sizing: border-box;
-       			-moz-box-sizing: border-box;
-            	box-sizing: border-box;
-				display: inline-block;
-				width:470px;
-				margin-left: 10px;
-				padding-left: 10px;
-				padding-right: 10px;
-				flex:1;
-				min-width: 280px;
-			}
-			#toTopRight{
-				position: absolute; 	/* Absolute Link */
-				bottom:0;				/* Offset however we wish*/
-				right:-80px;
-			}
-			#toTopLeft{
-				position: absolute; 	/* Absolute Link */
-				bottom:0;				/* Offset however we wish*/
-				left:-80px;
-			}
-			p{
-				padding-bottom: 50px;
-			}
-			#header{
-				top: 0px;
-				right: 0px;
-				position: fixed; /*must be fixed to keep header in position*/
-				border: 2px solid #000;
-				z-index: 100;	/* z-index*/
-			}
-						
-		</style>
-	</head>
-	<body>
-		<div id="container">
-			
-			<div id="header" class="box"> <h1>The Candyland Cart Company Ltd.</h1>
-			</div>
-			<div class="box sidebar">
-				<h2>Sidebar</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
-			
-			</div>
-			<div class="box content">
-				<h2>Content</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
-				
-			</div>
-			<div class="box sidebar">
-				<h2>Sidebar</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p><a href="#" alt="Link to top"><img id="toTopLeft" src="images/arrow.png"></a>
-			
-			</div>
-			<div  class="box content">
-				<h2>Content</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
-				<a href="#" alt="Link to top"><img id="toTopRight" src="images/arrow.png"></a>
-			</div>
-			<div id="footer" class="box"><h2>Footer</h2>
-			</div>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
 
-		</div>
-	</body>
+	<style> 
+
+    body{
+   		padding-top: 70px
+    }
+
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">        
+        <div class="container">
+        <div class='navbar-header'> 
+        <a class="navbar-brand" href="index.html">The Candyland Cart Company</a>
+        </div>
+            <ul  class="nav navbar-nav navbar-right">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="packages.html">Packages</a></li>
+                 <li><a href="bookings.html">Bookings</a></li>
+                 <li><a href="gallery.html">Gallery</a></li>
+                 <li><a href="sweetlist.html">Sweet List</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+<div class='container'>
+        <div class='col-md-12'>
+                <h1 align="center">Welcome!!!</h1>
+                <p align="center">Thank you for visiting our website, come on in and take a closer look at what we do.
+                </p>                
+            </div>
+
+    </div>
+    <hr>
+    <div class='container'> 
+        <div class='row'>
+            <!--4 column layout-->
+            <div class='col-md-3'>
+                <h1>JavaScript</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                
+            </div>
+            <div class='col-md-3'>
+                <h1>Python</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class='col-md-3'>
+                <h1>Django</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class='col-md-3'>
+                <h1>Python</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class='container'> 
+        <div class='row'>
+            <!--2 column layout-->
+            <div class='col-md-6'>
+                <h1>SQL</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>    
+            </div>
+            <div class='col-md-6'>
+                <h1>FTP</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class='container'> 
+        <!--1 column layout-->
+        <div class='row'>
+            <div class='col-md-12'>
+                <h1>Full-Stack Development</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>    
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </html>
