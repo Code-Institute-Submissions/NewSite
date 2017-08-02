@@ -9,3 +9,12 @@ I have opted for a bootstrap approach as this saves time and everything works we
 layout and design elements and making things look neat and tidy. And also working out the code for the booking form!
 
 Will add more to this as I complete additional sections ofg the site.
+
+Update - 02/08/2017
+
+	- Remove sample video as simply not needed. 
+	- Source new image files for "Sweet List" page.
+	- Update image layouts across all pages
+	- include social media section at the bottom of each page
+
+More to come!
