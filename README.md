@@ -18,3 +18,11 @@ Update - 02/08/2017
 	- include social media section at the bottom of each page
 
 More to come!
+
+# Addition of video! - 07/08/2017
+
+## I changed my mind!
+
+After considering tyhe video option as meing a bit much I decided to run a small test with iMovie on my phone to see if a short promo video would be possible. It turns out it was and the results were included as a lead on the Gallery page. Initial feedback has been positive from those who have seen it and it may well feature permanently on the final live site.
+
+Small struggle with the size of video but eventually settled on a small 360p option as the quality is good enough and not over-bearing on the page next to the images.
