@@ -1,0 +1,19 @@
+{
+  "name": "candyland",
+  "version": "1.0.0",
+  "description": "Candy Cart Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugdude01/NewSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bugdude01/NewSite/issues"
+  },
+  "homepage": "https://github.com/bugdude01/NewSite#readme"
+}
