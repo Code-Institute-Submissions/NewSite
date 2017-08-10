@@ -26,3 +26,11 @@ More to come!
 After considering tyhe video option as meing a bit much I decided to run a small test with iMovie on my phone to see if a short promo video would be possible. It turns out it was and the results were included as a lead on the Gallery page. Initial feedback has been positive from those who have seen it and it may well feature permanently on the final live site.
 
 Small struggle with the size of video but eventually settled on a small 360p option as the quality is good enough and not over-bearing on the page next to the images.
+
+# Stop being Lazy with "Ipsum"! - 10/08/2017
+
+## Time to add the text.
+
+This commit saw the final text used rather than the space-filling "ipsum lorem . . .  ." to give things a better outlook. Also added social media links inside the nav-bar for ease of reference and to keep things simple and tidy. Only one direct link to an actual Facebook page but will update Twitter and Instagram at a later stage.
+
+Still working on that pesky JS for the contact form!!
