@@ -1,0 +1,22 @@
+{
+  "name": "newsite",
+  "description": "The brief was fairly straightforward for this one and leant itself perfectly to a personal project of my own with real-world implications",
+  "main": "index.js",
+  "authors": [
+    "Richard <rafrhodes@yahoo.co.uk>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bugdude01/NewSite",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5"
+  }
+}
