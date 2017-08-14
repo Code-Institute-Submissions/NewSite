@@ -1,36 +1,50 @@
-# This is my Stream One assessment Project
+# Stream 1 Project
 
-The brief was fairly straightforward for this one and leant itself perfectly to a personal project of my own with real-world implications
+## What is this app for?
 
-My wife runs a small Candy Cart that she hires out for weddings and other events and showcasing this was going to be very similar to the 
-example of a band as laid out in the brief.
+This app is build to showgase a local Candy Cart hire service that needs a web presence. 
 
-I have opted for a bootstrap approach as this saves time and everything works well together so all I need to worry about is the 
-layout and design elements and making things look neat and tidy. And also working out the code for the booking form!
+## What does it do?
 
-Will add more to this as I complete additional sections ofg the site.
+It showcases the kind of work that the company does and also allows potential customers to make a booking enquiry based on details entered into a form.
 
-Update - 02/08/2017
+## How does it work?
 
-	- Remove sample video as simply not needed. 
-	- Source new image files for "Sweet List" page.
-	- Update image layouts across all pages
-	- include social media section at the bottom of each page
+This app uses AngularJS as a framework to house the pages in a constant navigation frame and is styled using Bootstrap.
 
-More to come!
+## Features
 
-# Addition of video! - 07/08/2017
+## Existing Features:
 
-## I changed my mind!
+ * Visitors can navigate to any part of the app via the index frame
+ * Visitors can watch a short movie showcasing what the business does
+ * Visitors can fill out abooking form to enquire about availability
+ 
+## Tech Used
 
-After considering tyhe video option as meing a bit much I decided to run a small test with iMovie on my phone to see if a short promo video would be possible. It turns out it was and the results were included as a lead on the Gallery page. Initial feedback has been positive from those who have seen it and it may well feature permanently on the final live site.
+### Technology used includes:
 
-Small struggle with the size of video but eventually settled on a small 360p option as the quality is good enough and not over-bearing on the page next to the images.
+* AngularJS
+	* Angular JS is used to take care of page routing
+	
+* Bootstrap
+	* Bootstrap is used to make the design responsive and clean
 
-# Stop being Lazy with "Ipsum"! - 10/08/2017
+* Bower
+	* Bower is used to install frameworks and and libraries
 
-## Time to add the text.
+# Contributing
 
-This commit saw the final text used rather than the space-filling "ipsum lorem . . .  ." to give things a better outlook. Also added social media links inside the nav-bar for ease of reference and to keep things simple and tidy. Only one direct link to an actual Facebook page but will update Twitter and Instagram at a later stage.
+## How you can contribute to this code if you wish:
 
-Still working on that pesky JS for the contact form!!
+1. Firstly you need to clone this repository by running the git clone <project's Github URL> command
+2. Next you need to make sure that you have npm and bower installed
+3. To install nodeJS go to "https://nodejs.org/en/" and install the latest version
+4. Once downloaded, open "Command Prompt" or "Powershell" and type the following command: npm install -g bower # this may require sudo on Mac/Linux
+5. Once npm and bower are installed, install the dependencies in package.json and bower.json by running the following in yout Terminal / Powershell: git add package.json
+
+6. After those dependencies have been installed you'll need to make sure that you have http-server installed. Do this by running the following: npm install -g http-server # this also may require sudo on Mac/Linux
+7. Once http-server is installed run http-server
+The project will now run on localhost
+8. Make changes to the code and if you would like it included in here then just submit a pull request
+
