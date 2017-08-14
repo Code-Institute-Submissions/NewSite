@@ -1,113 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>The Candyland Cart Company Ltd.</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-
-    <style> 
-   body{
-        padding-top: 70px
-   }
-
-        #container {
-            width: 550px;
-            margin: auto;
-        }
-        fieldset {
-            align-self: center;
-        }
-        legend {
-            font-size: 30px;
-            background-color: #fff;
-            border-radius: 5px;
-            border: 1px solid #999;
-            padding: 4px 15px;
-        }
-        label.field {
-            display: block;
-            text-align: right;
-            width: 100px;
-            float: left;
-            clear: both;
-        }
-        input {
-            border-radius: 5px;
-            padding: 6px 8px;
-            float: left;
-        }
-        #event {
-            width: 100px;
-            border-radius: 5px;
-            padding: 6px 8px;
-            float: left;
-        }
-        .field {
-            padding: 6px 8px;
-        }
-        fieldset {
-            width: 450px;
-            border: 1px solid #999;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 100px;
-            background-color: #eee;
-        }
-        h1 {
-            text-align: center;
-        }
-        p {
-            text-align: center;
-        }
-  </style>
-
-</head>
-<body>
-
-<nav class="navbar navbar-inverse navbar-fixed-top">        
-        <div class="container">
-        <div class='navbar-header'> 
-        <a class="navbar-brand" href="home.html">The Candyland Cart Company</a>
-        </div>
-            <ul  class="nav navbar-nav navbar-right">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="packages.html">Packages</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="sweetlist.html">Sweet List</a></li>
-                <li><a href="bookings.html">Bookings</a></li>         
-                <li><a href="http://www.facebook.com/thecandylandcartcompany" target="_blank"><img src="images/social/facebook.png" alt="FaceBook_Icon"></a></li>
-                <li><a href="http://www.twitter.com" target="_blank"><img src="images/social/twitter.png" alt="Twitter_Icon"></a></li>
-                <li><a href="http://www.instagram.com" target="_blank"><img src="images/social/instagram.png" alt="Instagram_Icon"></a></li>
-            </ul>
-        </div>
-    </nav>
-
 <div class='container'>
-        <div class='col-md-12'>
-                <h1>Bookings</h1>
-                <p>Please complete the form below and we will come back to you as quickly as possible.</p>
-                </div>
-
+    <div class='col-md-12'>
+        <h1>Bookings</h1>
+        <p>Please complete the form below and we will come back to you as quickly as possible.</p>
     </div>
-    <hr>
-    <div id="container" align="center">
-        <form>
-            <fieldset>
+</div>
+<hr>
+<div id="container" align="center">
+    <form>
+        <fieldset>
+            <label for="fname" class="field">Full Name:</label>
+            <input type="text" id="fname" placeholder="required field" name="fname" required=""/>
 
-                <label for="fname" class="field">Full Name:</label>
-                <input type="text" id="fname" placeholder="required field" name="fname" required=""/>
+            <label for="email" class ="field">Email address:</label>
+            <input id="email" name="email"  placeholder="enter email" type="email" required=""/>
 
-                <label for="email" class ="field">Email address:</label>
-                <input id="email" name="email"  placeholder="enter email" type="email" required=""/>
+            <label for="telephone" class="field">Home Phone:</label>
+            <input id="telephone" name="telephone" placeholder="landline number" pattern ="[0-9]{11}" title="landline phone number expected beginning 01********. No Spaces Please!" type="tel" required=""/>
 
-                <label for="telephone" class="field">Home Phone:</label>
-                <input id="telephone" name="telephone" placeholder="landline number" pattern ="[0-9]{11}" title="landline phone number expected beginning 01********. No Spaces Please!" type="tel" required=""/>
+            <label for="telephone" class="field">Mobile Phone:</label>
+            <input id="telephone" name="telephone" placeholder="mobile number" pattern ="[0-9]{11}" title="Mobile phone number expected beginning 07********. No Spaces Please!" type="tel" required=""/>
 
-                <label for="telephone" class="field">Mobile Phone:</label>
-                <input id="telephone" name="telephone" placeholder="mobile number" pattern ="[0-9]{11}" title="Mobile phone number expected beginning 07********. No Spaces Please!" type="tel" required=""/>
-
-                <label for="event" class="field">Event Type:</label>
-                <input list="event" name="Event Type">
+            <label for="event" class="field">Event Type:</label>
+            <input list="event" name="Event Type">
                 <datalist id="event">
                     <option value="Anniversary">Anniversary</option> 
                     <option value="Birthday">Birthday</option>
@@ -116,19 +30,15 @@
                     <option value="Other">Other</option> 
                 </datalist>
 
-                <label for="website" class ="field">Date of event:</label>
-                <input id="Date" name="Date" placeholder="Date" type="Date"/>
+            <label for="website" class ="field">Date of event:</label>
+            <input id="Date" name="Date" placeholder="Date" type="Date"/>
  
-                <label for="website" class ="field">Number of Guests:</label>
-                <input id="number" name="number" placeholder="number" type="number" />
+            <label for="website" class ="field">Number of Guests:</label>
+            <input id="number" name="number" placeholder="number" type="number" />
 
-                <label for="submit" class="field">Submit</label>
-                <input id="submit" type="submit" value="submit"/>
-            </fieldset>
-        </form>
-    </div>
-    <hr>
-</body>
-<script src="http://code.jquery.com/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-</html>
+            <label for="submit" class="field">Submit</label>
+            <input id="submit" type="submit" value="submit"/>
+        </fieldset>
+    </form>
+</div>
+<hr>

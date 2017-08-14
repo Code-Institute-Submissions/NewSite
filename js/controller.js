@@ -1,4 +1,4 @@
-angular.module('Candyland', [])
+angular.module('RouteControllers', [])
     .controller('HomeController', function($scope) {
         $scope.title = "home";
     })

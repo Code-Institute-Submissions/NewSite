@@ -1,17 +1,67 @@
 <!DOCTYPE html>
+<html ng-app='Candyland'>
 <head>
 	<base href="/"> <!-- needed for Angular HTML5 mode -->
     <title>The Candyland Cart Company</title>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
     <style type="text/css">
         body {
             padding-top: 70px;
         }
+        #container {
+            width: 550px;
+            margin: auto;
+        }
+        fieldset {
+            align-self: center;
+        }
+        legend {
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+        }
+        label.field {
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+            clear: both;
+        }
+        input {
+            border-radius: 5px;
+            padding: 6px 8px;
+            float: left;
+        }
+        #event {
+            width: 100px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            float: left;
+        }
+        .field {
+            padding: 6px 8px;
+        }
+        fieldset {
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color: #eee;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
     </style>
 </head>
-<body ng-app='Candyland'>
+<body>
     <nav class="navbar navbar-inverse navbar-fixed-top">        
         <div class="container">
         <div class='navbar-header'> 
@@ -28,13 +78,12 @@
                 <li><a href="http://www.instagram.com" target="_blank"><img src="/templates/images/social/instagram.png" alt="Instagram_Icon"></a></li>
             </ul>
         </div>
-        </div>
     </nav>
     <div ng-view>
 
     </div>
 <script src='js/app.js'></script>
 <script src='js/controller.js'></script>
-<script src='js/service.js'></script>
+<!--<script src='js/service.js'></script>-->
 </body>
 </html>
