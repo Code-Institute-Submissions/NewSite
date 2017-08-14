@@ -2,7 +2,7 @@
 
 ## What is this app for?
 
-This app is build to showgase a local Candy Cart hire service that needs a web presence. 
+This app is build to showcase a local Candy Cart hire service that needs a web presence. 
 
 ## What does it do?
 
@@ -18,7 +18,7 @@ This app uses AngularJS as a framework to house the pages in a constant navigati
 
  * Visitors can navigate to any part of the app via the index frame
  * Visitors can watch a short movie showcasing what the business does
- * Visitors can fill out abooking form to enquire about availability
+ * Visitors can fill out a booking form to enquire about availability
  
 ## Tech Used
 
