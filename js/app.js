@@ -1,4 +1,4 @@
-angular.module('Candyland', ['ngRoute', 'RouteControllers']);
+angular.module('Candyland', ['ngRoute', 'RouteControllers', 'UserService']);
  
 angular.module('Candyland').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);  // Enable href routing without hashes
@@ -22,8 +22,9 @@ angular.module('Candyland').config(function($locationProvider, $routeProvider) {
         templateUrl: '/templates/sweetlist.html',
         controller: 'SweetlistController'
     })
-    .when('/bookings', {
-        templateUrl: '/templates/bookings.html',
-        controller: 'BookingsController'
+    .when('/bookme', {
+        templateUrl: '/templates/bookme.html',
+        controller: 'RegisterController'
     });
 });
+

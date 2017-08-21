@@ -4,8 +4,13 @@
 	<base href="/"> <!-- needed for Angular HTML5 mode -->
     <title>The Candyland Cart Company</title>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <style type="text/css">
         body {
             padding-top: 70px;
@@ -62,28 +67,36 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">        
+    <div class="navbar navbar-inverse navbar-fixed-top">        
         <div class="container">
-        <div class='navbar-header'> 
-        <a class="navbar-brand" href="/">The Candyland Cart Company</a>
-        </div>
-            <ul  class="nav navbar-nav navbar-right">
+        <a class="navbar-brand" href="/">Candyland</a>
+            <button type="button" class="navbar-inverse navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul id="myCollapsingList" class="nav navbar-inverse navbar-nav navbar-right collapse navbar-collapse">
                 <li><a href="/">Home</a></li>
                 <li><a href="/packages">Packages</a></li>
                 <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/sweetlist">Sweet List</a></li>
-                <li><a href="/bookings">Bookings</a></li>         
-                <li><a href="http://www.facebook.com/thecandylandcartcompany" target="_blank"><img src="/templates/images/social/facebook.png" alt="FaceBook_Icon"></a></li>
-                <li><a href="http://www.twitter.com" target="_blank"><img src="/templates/images/social/twitter.png" alt="Twitter_Icon"></a></li>
-                <li><a href="http://www.instagram.com" target="_blank"><img src="/templates/images/social/instagram.png" alt="Instagram_Icon"></a></li>
+                <li><a href="/bookme">Book Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://www.facebook.com/thecandylandcartcompany" target="_blank"><img src="/templates/images/social/facebook.png" alt="FaceBook_Icon"></a></li>
+                        <li><a href="http://www.twitter.com" target="_blank"><img src="/templates/images/social/twitter.png" alt="Twitter_Icon"></a></li>
+                        <li><a href="http://www.instagram.com" target="_blank"><img src="/templates/images/social/instagram.png" alt="Instagram_Icon"></a></li>
+                    </ul>
+                </li>         
             </ul>
         </div>
-    </nav>
+    </div>
     <div ng-view>
 
     </div>
 <script src='js/app.js'></script>
 <script src='js/controller.js'></script>
-<!--<script src='js/service.js'></script>-->
-</body>
+<script src='js/service.js'></script>
+<script type='js/carousel.js'></script>
 </html>

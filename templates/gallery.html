@@ -1,4 +1,14 @@
 <div class='container'> 
+    <div align="center">
+        <div class='col-md-12'>
+            <div class="media-middle">
+                <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6uyrPVRjEmo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<hr>
+<div class='container'> 
     <div class='row'>
         <div class='col-md-12'>
             <h1 align="center">Gallery</h1>
@@ -9,32 +19,116 @@
     </div>
 </div>
 <hr>
-<div class='container'> 
-    <div align="center">
-        <div class='col-md-12'>
-            <div class="media-middle">
-                <video align="center" controls="controls" poster="/templates/images/cart002.jpg">
-                    <source src="/templates/video/CartVidSmall_OGV.ogv" type="video/ogg">
-                    <source src="/templates/video/CartVidSmall_mp4.mp4" type="video/mp4">
-                    <source src="/templates/video/CartVidSmall_WEBM.webm" type="video/webm">
-                </video>
+<!-- Carousel Code-->
+
+<div class='container'>
+    <div class='row'>
+        <div id="myCarousel" class="carousel slide" align="center" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="/templates/images/carousel/wedding005-minCRS.jpg" alt="DenhamGrove">
+              <div class="carousel-caption">
+                <h3>Denham Grove July 2014</h3>
+              </div>
             </div>
+
+            <div class="item">
+              <img src="/templates/images/carousel/wedding004-minCRS.jpg" alt="WeddingFayre">
+              <div class="carousel-caption">
+                <h3>Wedding Fayre 2015</h3>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="/templates/images/carousel/wedding003-minCRS.jpg" alt="June2016">
+              <div class="carousel-caption">
+                <h3>June 2016</h3>
+              </div>
+            </div>
+
+          <div class="item">
+              <img src="/templates/images/carousel/ChristmasFayre-minCRS.jpg" alt="ChristmasFayre">
+              <div class="carousel-caption">
+                <h3>Christmas Fayre 2016</h3>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="/templates/images/carousel/NewLivery-minCRS.jpg" alt="NewLivery">
+              <div class="carousel-caption">
+                <h3>Keeping Up Appearances</h3>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="/templates/images/carousel/wedding001-minCRS.jpg" alt="MoorPark">
+              <div class="carousel-caption">
+                <h3>Moor Park Mansion</h3>
+              </div>
+            </div>
+        </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
     </div>
 </div>
 <hr>
+
+<!--<div ng-controller="CarouselDemoCtrl">
+  <div style="height: 305px">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  
+<!-- Controls 
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>-->
+<!--
 <div class='container'> 
     <div class='row'>
         <div class='col-md-6'>
             <h1>Denham Grove July 2014</h1>
-            <img src="/templates/images/wedding005.jpg" class="img-responsive" alt="Responsive image">
+            <img src="/templates/images/wedding005-min.jpg" class="img-responsive" alt="Responsive image">
             <p>
             <br>One of Hertfordshire's most beautiful spots and a very popular wedding venue Denham Grove is perfect for setting up this little gem. Featuring out "lilac and Striped" theme to co-ordinate with out clients overall look, this was an elegant and contemporary setting and looked amazing.
             </p>                
         </div>
         <div class='col-md-6'>
             <h1>Wedding Fayre 2015</h1>
-            <img src="/templates/images/wedding004.jpg" class="img-responsive" alt="Responsive image">
+            <img src="/templates/images/wedding004-min.jpg" class="img-responsive" alt="Responsive image">
             <p>
             <br>It's always a good idea to keep abrest of the latest offerings out there for weddings and what clients expect to see. Wedding fayres are a perfect opportunity to do some research whilst also showcasing what we are all about.
             </p>
@@ -46,14 +140,14 @@
     <div class='row'>
         <div class='col-md-6'>
             <h1>June 2016</h1>
-            <img src="/templates/images/wedding003.jpg" class="img-responsive" alt="Responsive image">
+            <img src="/templates/images/wedding003-min.jpg" class="img-responsive" alt="Responsive image">
             <p>
             <br>One of our more memorable weddings where the party included a very large contingent of bikers. The most gentle and fun-loving souls you would ever wish to meet! One of our staff was even asked up to dance with the Best Man!!
             </p>  
         </div>
         <div class='col-md-6'>
             <h1>Christmas Fayre 2016</h1>
-            <img src="/templates/images/ChristmasFayre.jpg" class="img-responsive" alt="Responsive image">
+            <img src="/templates/images/ChristmasFayre-min.jpg" class="img-responsive" alt="Responsive image">
             <p>
             <br>Christmas is always a super busy time for us and we try to keep with the flavour of the many local Christmas Fayres that we attend during the season. Candy-Canes abound and as always and excellent selection for the pick 'n' mix fans too.
             </p>
@@ -65,18 +159,18 @@
     <div class='row'>
         <div class='col-md-6'>
             <h1>Keeping Up Appearances</h1>
-            <img src="/templates/images/NewLivery.jpg" class="img-responsive" alt="Responsive image">
+            <img src="/templates/images/NewLivery-min.jpg" class="img-responsive" alt="Responsive image">
             <p>
             <br>It's always important to ensure that the carts are looking their very best every time we show up, whatever the event. Like anyone else, we take pride in our appeearance and new livery is applied when it is needed to keep everything looking beautiful!
             </p>   
         </div>
         <div class='col-md-6'>
             <h1>Moor Park Mansion</h1>
-            <img src="/templates/images/wedding001.jpg" class="img-responsive" alt="Responsive image">
+            <img src="/templates/images/wedding001-min.jpg" class="img-responsive" alt="Responsive image">
             <p>
             <br>An absolutely STUNNING place to work and even better to PARTY!! Traditional wood-panneling combined with frescoed cielings make this an awe-inspiring venue and with beautifil landscaped gardens just outside, the summer weddings are a real treat.
             </p>
         </div>
     </div>
 </div>
-<hr>
+<hr>-->
