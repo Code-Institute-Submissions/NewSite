@@ -22,9 +22,8 @@ angular.module('Candyland').config(function($locationProvider, $routeProvider) {
         templateUrl: '/templates/sweetlist.html',
         controller: 'SweetlistController'
     })
-    .when('/bookme', {
-        templateUrl: '/templates/bookme.html',
+    .when('/bookus', {
+        templateUrl: '/templates/bookus.html',
         controller: 'RegisterController'
     });
 });
-

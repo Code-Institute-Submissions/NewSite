@@ -23,4 +23,3 @@ angular.module('RouteControllers', [])
             console.log($scope.registrationUser.username + " " + $scope.registrationUser.password);
         };
     });
-
