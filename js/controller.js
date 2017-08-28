@@ -2,24 +2,22 @@ angular.module('RouteControllers', [])
     .controller('HomeController', function($scope) {
         $scope.title = "home";
     })
-    .controller('PackageController', function($scope) {
-        $scope.title = "packages";
-    })
-    .controller('Gallery', function($scope) {
-        $scope.title = "gallery";
-    })
-    .controller('Sweetlist', function($scope) {
-        $scope.title = "sweetlist";
-    })
-    .controller('RegisterController', function($scope, UserAPIService) {
-        $scope.registrationUser = {};
+    .controller('BookingController', function($scope, UserAPIService) {
+        $scope.bookingUser = {};
 
         $scope.submitForm = function() {
-            if ($scope.registrationForm.$valid) {
-                $scope.registrationUser.username = $scope.user.username;
-                $scope.registrationUser.password = $scope.user.password;
+            if ($scope.bookingForm.$valid) {
+                $scope.bookingUser.name = $scope.user.name;
+                $scope.bookingUser.email = $scope.user.email;
+                $scope.bookingUser.homePhone = $scope.user.homePhone;
+                $scope.bookingUser.mobilePhone = $scope.user.mobilePhone;
+                $scope.bookingUser.date = $scope.user.date;
+                $scope.bookingUser.eventType = $scope.user.eventType;
+                $scope.bookingUser.guestNumber = $scope.user.guestNumber;
             }
  
-            console.log($scope.registrationUser.username + " " + $scope.registrationUser.password);
+            console.log($scope.bookingUser.name + " " + $scope.bookingUser.email + " " + $scope.bookingUser.homePhone
+                 + " " + $scope.bookingUser.mobilePhone + " " + $scope.bookingUser.date + " " + $scope.bookingUser.eventType
+                  + " " + $scope.bookingUser.guestNumber);
         };
     });

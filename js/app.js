@@ -11,19 +11,17 @@ angular.module('Candyland').config(function($locationProvider, $routeProvider) {
         controller: 'HomeController'
     })
     .when('/packages', {
-        templateUrl: '/templates/packages.html',
-        controller: 'PackageController'
+        templateUrl: '/templates/packages.html'
     })
     .when('/gallery', {
-        templateUrl: '/templates/gallery.html',
-        controller: 'GalleryController'
+        templateUrl: '/templates/gallery.html'
     })
     .when('/sweetlist', {
-        templateUrl: '/templates/sweetlist.html',
-        controller: 'SweetlistController'
+        templateUrl: '/templates/sweetlist.html'
     })
     .when('/bookus', {
         templateUrl: '/templates/bookus.html',
-        controller: 'RegisterController'
+        controller: 'BookingController'
     });
 });
+
