@@ -2,7 +2,7 @@
 
 ## What is this app for?
 
-This app is build to showcase a local Candy Cart hire service that needs a web presence. 
+This app is built to showcase a local Candy Cart hire service that needs a web presence. 
 
 ## What does it do?
 
