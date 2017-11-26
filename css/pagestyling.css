@@ -47,7 +47,19 @@ body {
         h1 {
             text-align: center;
         }
-        p {
+        h2 {
             text-align: center;
         }
-
+        h4 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+            border: 2px solid red;
+        }
+        button[disabled="disabled"]{
+            opacity: 0.4;
+            cursor: not-allowed !important;
+        }
