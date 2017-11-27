@@ -38,7 +38,7 @@ This app uses AngularJS as a framework to house the pages in a constant navigati
 1. Firstly you need to clone this repository by running the git clone <project's Github URL> command
 2. Next you need to make sure that you have npm and bower installed
 3. To install nodeJS go to "https://nodejs.org/en/" and install the latest version
-4. Once downloaded, open "Command Prompt" or "Powershell" and type the following command: npm install -g bower Note: this may require sudo on Mac/Linux
+4. Once downloaded, open "Command Prompt" or "Powershell" and type the following command: `npm install -g bower` Note: this may require sudo on Mac/Linux
 5. Once npm and bower are installed, install the dependencies in package.json and bower.json by running the following in yout Terminal / Powershell: `bower install && npm install` 
 
 6. After those dependencies have been installed you'll need to make sure that you have http-server installed. Do this by running the following: `npm install -g http-server` Note: this also may require sudo on Mac/Linux
