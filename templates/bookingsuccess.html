@@ -1,7 +1,14 @@
 <div class='container'>
     <div class='col-md-12'>
-        <h1>{{title}}</h1>
-        <p>Your booking request has been submitted and we will come back to you to shortly.</p>
+        <h1>Thanks {{bookingInfo.name}}</h1>
+        <h2>Here's the information we now have:</h2>
+        <h2>Your email: {{bookingInfo.email}}</h2>
+        <h2>Your Home Phone: {{bookingInfo.homePhone}}</h2>
+        <h2>Your Mobile Number: {{bookingInfo.mobilePhone}}</h2>
+        <h2>Your event date is {{bookingInfo.date}}</h2>
+        <h2>and you are enquiring about a {{bookingInfo.eventType}}, catering for {{bookingInfo.guestNumber}} guests.</h2>
+
+        <h4>Your booking request has been submitted and we will come back to you to shortly.</h4>
     </div>
 </div>
 <hr>

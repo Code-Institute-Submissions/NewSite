@@ -4,16 +4,13 @@
         <h4>Please complete the form below and we will come back to you as quickly as possible.</h4>
     </div>
 </div>
-<hr>
 <div>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-            </div>
 
             <!-- Form Data-->
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-sm-offset-3">
                 <form name="bookingForm" ng-submit="submitForm()" novalidate>
                     <div class="form-group">
                         <input type="text" placeholder="Name" name="name" class="form-control" ng-model="user.name" ng-required="true">
@@ -43,14 +40,8 @@
                         <input type="number" placeholder="Number Of Guests" name="guestNumber" class="form-control" ng-model="user.guestNumber" ng-required="true">
                         <p ng-show="bookingForm.guestNumber.$touched && bookingForm.guestNumber.$invalid" class="help-block">We need to know how many guests you will have.</p>
                     </div>
- 
                     <button type="submit" class="btn btn-primary" ng-disabled="bookingForm.$invalid">Submit</button>
                 </form>
-            </div>
-
-            <!--End of form Data-->
-
-            <div class="col-md-3">
             </div>
         </div>
     </div>

@@ -7,4 +7,20 @@ angular.module('UserService', [])
             }
         };
         return UserAPIService;
+    })
+
+   angular.module('BookingDataApi', [])
+    .factory('BookingDataApi', function() {
+ 
+ 		var bookingInfo  = {};
+
+        BookingDataApi = {
+            setBookingInfo: function(data) {
+            	bookingInfo = data
+            },
+            getBookingInfo: function(){
+            	return bookingInfo;
+            }
+        };
+        return BookingDataApi;
     });

@@ -2,7 +2,8 @@ angular.module('RouteControllers', [])
     .controller('HomeController', function($scope) {
         $scope.title = "home";
     })
-    .controller('BookingController', function($scope, UserAPIService) {
+    .controller('BookingController', function($scope, UserAPIService, BookingDataApi, $location) {
+
         $scope.bookingUser = {};
 
         $scope.submitForm = function() {
@@ -14,10 +15,16 @@ angular.module('RouteControllers', [])
                 $scope.bookingUser.date = $scope.user.date;
                 $scope.bookingUser.eventType = $scope.user.eventType;
                 $scope.bookingUser.guestNumber = $scope.user.guestNumber;
+
+                BookingDataApi.setBookingInfo($scope.bookingUser);
+                $location.path('/confirm');
             }
+
  
             console.log($scope.bookingUser.name + " " + $scope.bookingUser.email + " " + $scope.bookingUser.homePhone
                  + " " + $scope.bookingUser.mobilePhone + " " + $scope.bookingUser.date + " " + $scope.bookingUser.eventType
                   + " " + $scope.bookingUser.guestNumber);
         };
+    }).controller('BookingConfirmationController', function($scope, BookingDataApi){
+        $scope.bookingInfo = BookingDataApi.getBookingInfo();
     });

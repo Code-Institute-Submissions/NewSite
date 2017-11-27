@@ -1,6 +1,10 @@
 body {
             padding-top: 70px;
         }
+        #row {
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
         #container {
             width: 550px;
             margin: auto;
@@ -49,12 +53,19 @@ body {
         }
         h2 {
             text-align: center;
+            padding-bottom: 10px;
         }
         h4 {
             text-align: center;
+            padding-bottom: 15px;
         }
         p {
             text-align: justify;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        input {
+            margin-bottom: 10px;
         }
         input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
             border: 2px solid red;
