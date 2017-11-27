@@ -30,6 +30,7 @@ body {
             border-radius: 5px;
             padding: 6px 8px;
             float: left;
+            margin-bottom: 10px;
         }
         #event {
             width: 100px;
@@ -63,9 +64,6 @@ body {
             text-align: justify;
             padding-top: 15px;
             padding-bottom: 15px;
-        }
-        input {
-            margin-bottom: 10px;
         }
         input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
             border: 2px solid red;
