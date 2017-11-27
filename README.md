@@ -2,7 +2,9 @@
 
 This app is built to showcase a local Candy Cart hire service that needs a web presence. 
 
+## Screen Shot
 
+![Screenshot](https://user-images.githubusercontent.com/22508314/33284612-925a9dca-d3a7-11e7-8d78-4762cfb4ec9a.png)
 
 ## What does it do?
 
