@@ -7,7 +7,7 @@ angular.module('UserService', [])
             }
         };
         return UserAPIService;
-    })
+    });
 
    angular.module('BookingDataApi', [])
     .factory('BookingDataApi', function() {
@@ -16,7 +16,7 @@ angular.module('UserService', [])
 
         BookingDataApi = {
             setBookingInfo: function(data) {
-            	bookingInfo = data
+            	bookingInfo = data;
             },
             getBookingInfo: function(){
             	return bookingInfo;

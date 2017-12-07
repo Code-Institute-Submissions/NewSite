@@ -27,4 +27,3 @@ angular.module('Candyland').config(function($locationProvider, $routeProvider) {
         controller: 'BookingConfirmationController'
     });
 });
-
