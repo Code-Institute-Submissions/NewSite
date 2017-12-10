@@ -47,4 +47,5 @@ This app uses AngularJS as a framework to house the pages in a constant navigati
 7. Once http-server is installed run http-server The project will now run on localhost
 8. Make changes to the code and if you would like it included in here then just submit a pull request
 
-## See it in action! Take a look at the working code here: https://bugdude01.github.io/NewSite/
+## See it in action! 
+### Take a look at the working code here: https://bugdude01.github.io/NewSite/
