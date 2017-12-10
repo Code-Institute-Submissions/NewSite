@@ -1,7 +1,6 @@
 angular.module('Candyland', ['ngRoute', 'RouteControllers', 'UserService', 'BookingDataApi']);
  
-angular.module('Candyland').config(function($routeProvider, $locationProvider) {
-    $locationProvider.html5Mode(false); 
+angular.module('Candyland').config(function($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
