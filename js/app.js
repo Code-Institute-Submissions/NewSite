@@ -1,8 +1,8 @@
 angular.module('Candyland', ['ngRoute', 'RouteControllers', 'UserService', 'BookingDataApi']);
  
 angular.module('Candyland').config(function($locationProvider, $routeProvider) {
-    $locationProvider.html5Mode(true);  // Enable href routing without hashes
-    $routeProvider.when('/NewSite/', {
+  
+    $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
