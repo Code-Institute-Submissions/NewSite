@@ -17,7 +17,7 @@ angular.module('RouteControllers', [])
                 $scope.bookingUser.guestNumber = $scope.user.guestNumber;
 
                 BookingDataApi.setBookingInfo($scope.bookingUser);
-                $location.path('/confirm');
+                $location.path('confirm');
             }
 
  
