@@ -5,23 +5,23 @@ angular.module('Candyland').config(function($routeProvider) {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/home', {
+    .when('home', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/packages', {
+    .when('packages', {
         templateUrl: 'templates/packages.html'
     })
-    .when('/gallery', {
+    .when('gallery', {
         templateUrl: 'templates/gallery.html'
     })
-    .when('/sweetlist', {
+    .when('sweetlist', {
         templateUrl: 'templates/sweetlist.html'
     })
-    .when('/bookus', {
+    .when('bookus', {
         templateUrl: 'templates/bookus.html',
         controller: 'BookingController'
-    }).when('/confirm', {
+    }).when('confirm', {
         templateUrl: 'templates/bookingsuccess.html',
         controller: 'BookingConfirmationController'
     });
