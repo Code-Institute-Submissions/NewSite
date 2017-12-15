@@ -37,7 +37,7 @@ This app uses AngularJS as a framework to house the pages in a constant navigati
 
 # Local Setup 
 
-1. Firstly you need to clone this repository by running the 'git clone https://github.com/bugdude01/NewSite' command
+1. Firstly you need to clone this repository by running the `git clone https://github.com/bugdude01/NewSite` command
 2. Next you need to make sure that you have npm and bower installed
 3. To install nodeJS go to "https://nodejs.org/en/" and install the latest version
 4. Once downloaded, open "Command Prompt" or "Powershell" and type the following command: `npm install -g bower` Note: this may require sudo on Mac/Linux
